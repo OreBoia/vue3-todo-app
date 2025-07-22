@@ -1,23 +1,17 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+// import { RouterLink, RouterView } from 'vue-router'
+// import HelloWorld from './components/HelloWorld.vue'
+import CounterComponent from './components/Ref-Reactive/CounterComponentSimple.vue'
+import DirectiveExamples from './components/Directives/DirectiveExamples.vue';
+import ParentTodo from './components/EmitPropsChildParent/ParentTodo.vue'
+import ReactiveExample from './components/Ref-Reactive/ReactiveExample.vue';
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </div>
-  </header>
-
-  <RouterView />
+  <CounterComponent />
+  <ParentTodo />
+  <ReactiveExample></ReactiveExample>
+  <DirectiveExamples></DirectiveExamples>
 </template>
 
 <style scoped>
