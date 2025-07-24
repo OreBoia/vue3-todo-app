@@ -5,13 +5,36 @@ import CounterComponent from './components/Ref-Reactive/CounterComponentSimple.v
 import DirectiveExamples from './components/Directives/DirectiveExamples.vue';
 import ParentTodo from './components/EmitPropsChildParent/ParentTodo.vue'
 import ReactiveExample from './components/Ref-Reactive/ReactiveExample.vue';
+import RefExample from './components/Ref-Reactive/RefExample.vue';
 </script>
 
 <template>
-  <CounterComponent />
-  <ParentTodo />
-  <ReactiveExample></ReactiveExample>
-  <DirectiveExamples></DirectiveExamples>
+  <!-- <div>
+    <div><CounterComponent /></div>
+    <br>
+    <div><ParentTodo /></div>
+    <br>
+    <div><RefExample></RefExample></div>
+    <br>
+    <div><ReactiveExample></ReactiveExample></div>
+    <br>
+    <div><DirectiveExamples></DirectiveExamples></div>
+  </div> -->
+    <header>
+    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+
+    <div class="wrapper">
+      <HelloWorld msg="Esempio Vue Router con Rotte Dinamiche!" />
+
+      <nav>
+        <RouterLink to="/">Home</RouterLink>
+        <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/users">Utenti</RouterLink>
+      </nav>
+    </div>
+  </header>
+
+  <RouterView />
 </template>
 
 <style scoped>
